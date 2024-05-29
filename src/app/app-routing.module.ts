@@ -1,10 +1,15 @@
+import { Routes, RouterModule } from '@angular/router';
+import { CinemaComponent } from './cinema/cinema.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
 
+export const routes: Routes = [
+  { path: "cinema",
+    component: CinemaComponent },
+  // autres routes
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule{}
